@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">Matheus Leander</h1>
+            <button class="hamburguer" 
+            aria-label="Abrir menu">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#Desenvolvimento">Desenvolvimento</a></li>
+                <li><a href="#Docencia">Professora</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+            <p>Sou Matheus aluno do  Senac de Coromandel/MG e participo de aulas 
+                de informática.
+               Este é um site para aulas de HTML e CSS. 
+            </p>
+        </section>
+        <section id="desenvolvimento">
+            <h2>Desenvolvimento</h2>
+            <ul>
+                <li>Velocidade de digitação</li>
+                <li>Inteligência Artificial</li>
+                <li>CSS</li>
+                <li>HTML</li>
+            </ul>
+        </section>
+        <section id="docencia">
+            <h2>Aulas no Senac</h2>
+            <div class="card">
+                <h3>HTML e CSS</h3>
+                <p>Criação de Websites</p>
+            </div>
+            <div class="card">
+                <h3>Técnico em  Informática</h3>
+                <p>Hardware e Software</p>
+            </div>
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Me envie uma mensagem:
+                leander@email.com
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Matheus Leander.
+            Todos os direitos reservados.
+        </p>
+    </footer>
+
+    <script>
+        const hamburguer = document.querySelector('.hamburguer');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburguer.addEventListener('click', () =>{
+            navLinks.classList.toggle('active');
+        }
+    );
+    </script>
+
+</body>
+</html>
